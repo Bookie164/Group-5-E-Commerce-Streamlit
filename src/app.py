@@ -47,7 +47,7 @@ def load_and_preprocess_data():
     try:
         # Try to load the data from the workspace
         data_path = 'mytestdata.parquet'
-        data = pd.read_parquet(data_path)
+        data = pd.read_parquet('mytestdata.parquet')
         return data
     except:
         # If file not found, return None
